@@ -11,10 +11,10 @@ function valider (){
     }
 
     if(dividendo % divisor === 0){
-        resultado.textContent= "correcto";
+         resultado.textContent = `✅ ${dividendo} es múltiplo de ${divisor}.`;
         resultado.className = "mt-4 text-center font-semibold text-green-600";
     }else {
-         resultado.textContent= "noooo";
+         resultado.textContent = `❌ ${dividendo} no es múltiplo de ${divisor}.`;
          resultado.className = "mt-4 text-center font-semibold text-red-600";
     }
 
