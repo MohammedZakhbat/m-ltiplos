@@ -6,7 +6,33 @@
     <link rel="stylesheet" href="./output.css">
     <title>Múltiplos</title>
 </head>
-<body>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+    <div class="bg-white shadow-lg rounded-xl p-8 w-80">
+        <h1 class="text-xl font-bold text-center mb-6">Vérifier un multiple</h1>
+
+        <input 
+            type="number" 
+            id="dividendo" 
+            placeholder="Dividende"
+            class="w-full mb-4 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+        >
+
+        <input 
+            type="number" 
+            id="divisor" 
+            placeholder="Diviseur (2 à 7)"
+            class="w-full mb-4 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+        >
+
+        <button 
+            onclick="valider()" 
+            class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition"
+        >
+            Valider
+        </button>
+
+        <p id="resultado" class="mt-4 text-center font-semibold"></p>
     <script src="app.js"></script>
 </body>
 </html>
